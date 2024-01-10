@@ -27,7 +27,6 @@ const app = createApp({
         .get(`${this.apiUrl}/v2/api/${this.apiPath}/admin/products/all`)
         .then((res) => {
           this.productsData = res.data.products;
-          console.log(this.productsData);
         })
         .catch((err) => {
           alert(err.response.data.message);
